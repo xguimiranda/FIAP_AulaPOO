@@ -23,7 +23,7 @@ public class Main {
             int quantity = sc.nextInt();
             produto[i] = new Produto(name, value, quantity);
         }
-        System.out.println("Qual produto você quer aumentar o valor com uma porcentagem: ");
+        System.out.println("Qual é o nome do produto você quer aumentar o valor: ");
         String name = sc.next();
         int p = -1;
         for (int i = 0; i < n; i++){
