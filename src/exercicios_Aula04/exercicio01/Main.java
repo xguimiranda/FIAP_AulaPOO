@@ -24,8 +24,20 @@ public class Main {
             produto[i] = new Produto(name, value, quantity);
         }
         System.out.println("Qual produto você quer aumentar o valor com uma porcentagem: ");
-        int p = sc.nextInt();
-        int indice = p - 1;
+        String name = sc.next();
+        int p = -1;
+        for (int i = 0; i < n; i++){
+            if (name.equalsIgnoreCase(produto[i].getName())){
+                p = i;
+                break;
+            }
+        }
+        if (p == -1){
+            System.out.println("Produto não encontrado!");
+            return;
+        }
+
+        int indice = p;
 
         System.out.print("Digite a porcentagem de aumento (0-100): ");
         double porcentagem = sc.nextDouble();
@@ -35,7 +47,7 @@ public class Main {
         }
 
         produto[indice].aumentarValor(porcentagem);
-        System.out.println("Novo valor do produto " + produto[indice].getName() + ": " + produto[indice].getValue());
+        System.out.println("Novo valor do produto " + produto[indice].getName() + ": " + String.format("%.2f R$", produto[indice].getValue()));
 
 
         sc.close();
