@@ -42,4 +42,24 @@ public class Main {
 
         sc.close();
     }
+
+    private static void catraca() {
+        if (!bilhete.passarNaCatraca()) {
+            System.out.println("❌ Saldo insuficiente!");
+        } else {
+            System.out.println("✅ Catraca liberada! Boa viagem.");
+        }
+        consultarSaldo();
+    }
+
+    private static void consultarSaldo() {
+        System.out.println("Saldo atual --> R$" + String.format("%.2f", bilhete.getSaldo()));
+    }
+
+    private static void carregar() {
+        double valor;
+        System.out.print("Valor da recarga --> R$");
+        valor = sc.nextDouble();
+        bilhete.carregar(valor);
+    }
 }
