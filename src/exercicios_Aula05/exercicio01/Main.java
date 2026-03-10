@@ -24,8 +24,21 @@ public class Main {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+        int opcao;
 
+        do{
+            System.out.print("\n **********MENU********** \n Escolha sua opção: \n 1- Carregar Bilhete \n 2- Consultar Saldo \n 3- Passar na catraca \n 4- Sair \n");
+            opcao = sc.nextInt();
+            
+            switch (opcao){
+                case 1 -> carregar();
+                case 2 -> consultarSaldo();
+                case 3 -> catraca();
+                case 4 -> System.out.println("Obrigado por usar nosso APP!");
+                default -> System.out.println("Opção invalida!");
+            }
+
+        }while (opcao != 4);
 
         sc.close();
     }
