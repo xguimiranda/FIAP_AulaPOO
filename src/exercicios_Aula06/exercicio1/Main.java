@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MonitorEnergia monitor = new MonitorEnergia(10);
+        int dia = 1;
 
         do {
             System.out.printf("Digite a valor do dia %d: ", dia);
