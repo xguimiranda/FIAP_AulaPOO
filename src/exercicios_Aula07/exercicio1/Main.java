@@ -25,6 +25,12 @@ public class Main {
 
     }
 
+    private static void estacionados() {
+        for (int i = 0; i < indexRegistro; i++){
+            System.out.print(registro[i].veiculo.placa);
+        }
+    }
+
     private static void registrarEntrada(){
         String nome;
         String marca, modelo, placa;
