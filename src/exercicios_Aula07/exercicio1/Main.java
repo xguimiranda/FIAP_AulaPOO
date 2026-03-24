@@ -29,6 +29,7 @@ public class Main {
         String nome;
         String marca, modelo, placa;
         long cpf;
+        String horaEntrada;
 
         Veiculo veiculoEncontrado = pesquisar();
         if (veiculoEncontrado == null){
