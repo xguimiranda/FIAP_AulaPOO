@@ -36,6 +36,7 @@ public class Main {
                 return veiculo[i];
             }
         }
+        System.out.println("Veiculo não encontrado!");
         return null;
     }
 }
