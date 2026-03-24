@@ -21,6 +21,11 @@ public class Main {
                     "[5] Finalizar");
             opcao = sc.nextInt();
 
+            switch (opcao){
+                case 1 -> registrarEntrada();
+                case 2 -> estacionados();
+            }
+
         }while (opcao !=5);
 
     }
