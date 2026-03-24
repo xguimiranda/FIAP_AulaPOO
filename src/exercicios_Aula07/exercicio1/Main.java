@@ -6,6 +6,8 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
     static Veiculo[] veiculo = new Veiculo[5];
     static int indexVeiculo;
+    static Registro[] registro = new Registro[20];
+    static int indexRegistro;
 
     public static void main(String[] args) {
 
