@@ -24,7 +24,25 @@ public class Main {
     }
 
     private static void registrarEntrada(){
+        String nome;
+        String marca, modelo, placa;
+        long cpf;
 
+        Veiculo veiculoEncontrado = pesquisar();
+        if (veiculoEncontrado == null){
+            System.out.print("Nome do proprietario: ");
+            nome = sc.next();
+            System.out.print("CPF do proprietario : ");
+            cpf =  sc.nextLong();
+            System.out.print("Placa do Veiculo: ");
+            placa = sc.next().toUpperCase();
+            System.out.print("Modelo do veiculo: ");
+            modelo = sc.next();
+            System.out.print("Marca do veiculo: ");
+            marca = sc.next();
+            Proprietario proprietario = new Proprietario(nome, cpf);
+            veiculo[indexVeiculo++] = new Veiculo(placa, modelo, marca, proprietario);
+        }
     }
 
     private static Veiculo pesquisar(){
