@@ -22,6 +22,22 @@ public class Main {
         }while (opcao !=5);
 
     }
+
+    private static void registrarEntrada(){
+
+    }
+
+    private static Veiculo pesquisar(){
+        String placa;
+        System.out.print("Placa para pesquisa ----> ");
+        placa = sc.next().toUpperCase();
+        for (int i = 0; i < indexVeiculo; i++){
+            if (veiculo[i].placa.equals(placa)) {
+                return veiculo[i];
+            }
+        }
+        return null;
+    }
 }
 
 
