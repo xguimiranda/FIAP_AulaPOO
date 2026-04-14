@@ -1,5 +1,6 @@
 package exercicios_Aula08.exercicio1;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class Carga {
@@ -17,6 +18,7 @@ public class Carga {
     }
 
     public String getDados(){
+        Locale.setDefault(Locale.US);
         String aux = "";
         aux += "ID: " + id + "\n";
         aux += "Destino: " + destino + "\n";
