@@ -28,5 +28,24 @@ public class Util {
       } while (opcao != 6);
     }
 
+    private void Exibir() {
+    }
+
+    private void reservar() {
+      int cnpj;
+      String destino, nomeCliente;
+
+      cnpj = parseInt(showInputDialog("CNPJ"));
+      destino = showInputDialog("Destino");
+      nomeCliente = showInputDialog("Cliente");
+      Cliente cliente = new Cliente(cnpj, nomeCliente);
+      Carga carga = new Carga(destino, cliente);
+      if (navio.reservar(carga)){
+          showMessageDialog(null, "Carga reservada com sucesso!👌");
+      }else {
+          showMessageDialog(null, "Problemas ao reversar a carga. Entre em contato 0800-9969");
+      }
+  }
+
   
 }
