@@ -29,6 +29,7 @@ public class Util {
     }
 
     private void Exibir() {
+        showMessageDialog(null, navio.getDados());
     }
 
     private void reservar() {
