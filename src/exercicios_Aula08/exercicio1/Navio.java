@@ -10,3 +10,24 @@ public class Navio {
         this.index = 0;
         this.carga = new Carga[20];
     }
+
+    public boolean permitidoReservar(double peso) {
+        double total = 0;
+        for(int i = 0; i < index; i++) {
+            total += carga[i].getPeso();
+        }
+
+        return (total + peso) <= capacidade;
+    }
+
+    public boolean reservar(Carga carga) {
+        if(index < this.carga.length) {
+            if(permitidoReservar(carga.getPeso())) {
+                this.carga[index] = carga;
+                index++;
+                return true;
+            }
+        }
+        return false;
+    }
+}
