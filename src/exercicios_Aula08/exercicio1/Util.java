@@ -4,6 +4,9 @@ import static java.lang.Integer.parseInt;
 import static java.lang.Double.parseDouble;
 
 public class Util {
+
+    private Navio navio = new Navio();
+
     public void menu(){
       int opcao;
         do {
@@ -20,8 +23,7 @@ public class Util {
           } else {
             switch (opcao) {
               case 1 -> reservar();
-              case 2 -> pesquisar();
-              case 3 -> exibir();
+              case 3 -> Exibir();
               case 6 -> showMessageDialog(null, "Até breve!");
             }
           }
@@ -48,5 +50,5 @@ public class Util {
       }
   }
 
-  
+
 }
