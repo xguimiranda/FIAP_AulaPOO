@@ -18,7 +18,7 @@ public class Carga {
     }
 
     public String getDados(){
-        Locale.setDefault(Locale.US);
+        Locale.setDefault(new Locale("pt", "BR"));
         String aux = "";
         aux += "ID: " + id + "\n";
         aux += "Destino: " + destino + "\n";
