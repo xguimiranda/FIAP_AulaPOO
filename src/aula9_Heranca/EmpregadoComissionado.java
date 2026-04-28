@@ -17,8 +17,10 @@ public class EmpregadoComissionado extends Empregado {
     @Override
     public String toString() {
         return "EmpregadoComissionado{" +
-                "totalDeVendas=" + totalDeVendas +
+                "matricula=" + matricula +
+                ", nome='" + nome + '\'' +
                 ", comissao=" + comissao +
+                ", totalDeVendas=" + totalDeVendas +
                 '}';
     }
 }
