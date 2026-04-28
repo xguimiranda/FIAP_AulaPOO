@@ -12,4 +12,11 @@ public abstract class Empregado {
 
     public abstract double calcularSalario();
 
+    @Override
+    public String toString() {
+        return "Empregado{" +
+                "matricula=" + matricula +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
