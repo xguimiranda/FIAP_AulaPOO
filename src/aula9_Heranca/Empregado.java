@@ -1,6 +1,6 @@
 package aula9_Heranca;
 
-public class Empregado {
+public abstract class Empregado {
     long matricula;
     String nome;
 
