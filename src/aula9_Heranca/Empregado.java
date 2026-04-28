@@ -10,8 +10,6 @@ public class Empregado {
         this.nome = nome;
     }
 
-    public double calcularSalario() {
-        return 0;
-    }
+    public abstract double calcularSalario();
 
 }
