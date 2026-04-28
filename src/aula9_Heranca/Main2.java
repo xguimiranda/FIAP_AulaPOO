@@ -15,6 +15,8 @@ public class Main2 {
             System.out.println(lista.get(i).nome);
         }
 
+        System.out.println();
+        
         //for generico
         for (Empregado empregado : lista){
             System.out.println(empregado);
